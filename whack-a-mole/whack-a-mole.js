@@ -21,6 +21,8 @@ let randomCell = cells[randomIndex]
 let mole = document.createElement('img')
 
 mole.src = './mole.PNG'
+
+//from the main.css file we have edit the size of the img to fit in the cells and have called it by it's id tag.
 mole.id = 'mole'
 
 //This stops the img appearing in every cell because it can only be in one part of the document at a time. So if the node already has a parent. Before it appears in a new cells it first has be leave it's current position
