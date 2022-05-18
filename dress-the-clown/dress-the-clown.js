@@ -15,20 +15,20 @@ document.onkeydown = checkKey
 function checkKey(event) {
   switch (event.keyCode) {
     case 37:
-      alert('left')
+      //alert('left')
       changeHorizontal(-1)
       console.log('Hello')
       break
     case 38:
-      alert('up')
+      // alert('up')
       changeVertical(-1)
       break
     case 39:
-      alert('right')
+      // alert('right')
       changeHorizontal(1)
       break
     case 40:
-      alert('down')
+      // alert('down')
       changeVertical(1)
       break
   }
@@ -66,6 +66,7 @@ function changeHorizontal(shift) {
     if (shoesIndex < 0) shoesIndex = 5
     if (shoesIndex > 5) shoesIndex = 0
     shoes.src = './images/shoes' + shoesIndex + '.png'
+    console.log(shoes)
   }
 }
 
